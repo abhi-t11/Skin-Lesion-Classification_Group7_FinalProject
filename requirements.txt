@@ -1,0 +1,28 @@
+MATLAB Toolboxes Required
+=========================
+
+Minimum MATLAB Version: R2020b or later
+
+Required Toolboxes:
+- Deep Learning Toolbox (for CNN training and ResNet50)
+- Image Processing Toolbox (for image manipulation)
+- Computer Vision Toolbox (for image datastores and evaluation)
+- Statistics and Machine Learning Toolbox (for data splitting)
+
+Optional (for faster training):
+- Parallel Computing Toolbox (for GPU acceleration)
+- CUDA Toolkit 10.1 or later (for NVIDIA GPUs)
+
+Hardware Requirements:
+- RAM: Minimum 8GB (16GB recommended)
+- Storage: ~5GB for dataset + ~1GB for models
+- GPU: Optional but recommended (reduces training time from 90min to 10min)
+
+Tested On:
+- MATLAB R2023b
+- Windows 11
+- NVIDIA GeForce RTX 4070 Laptop GPU
+- CUDA 12.0
+
+To verify installation, run in MATLAB:
+>> ver

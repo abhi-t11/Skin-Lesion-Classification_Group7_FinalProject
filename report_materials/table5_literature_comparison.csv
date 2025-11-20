@@ -1,0 +1,5 @@
+Study,Dataset,Method,Accuracy_Percent
+Tschandl et al. (2018),HAM10000,Baseline CNN,85
+Guth & de Campos (2018),HAM10000,U-Net Segmentation,87.5
+Khan et al. (2021),HAM10000,Deep Learning + Optimization,92
+Your Model (2025),HAM10000,ResNet50 Transfer Learning,83.4510595358224

@@ -1,0 +1,33 @@
+Dataset Files Information
+=========================
+
+Files Used in This Project:
+---------------------------
+✓ HAM10000_images_part_1/       - Full-resolution dermoscopic images (part 1)
+✓ HAM10000_images_part_2/       - Full-resolution dermoscopic images (part 2)
+✓ HAM10000_metadata.csv         - Labels and patient metadata
+
+Files NOT Used (Downloaded but Ignored):
+----------------------------------------
+✗ hmnist_8_8_L.csv              - 8×8 grayscale downsampled version
+✗ hmnist_8_8_RGB.csv            - 8×8 RGB downsampled version
+✗ hmnist_28_28_L.csv            - 28×28 grayscale downsampled version
+✗ hmnist_28_28_RGB.csv          - 28×28 RGB downsampled version
+
+Why We Don't Use the CSV Files:
+--------------------------------
+The hmnist CSV files contain extremely low-resolution versions of the images
+(8×8 and 28×28 pixels) designed for quick MNIST-style experiments.
+
+These are too small for meaningful skin lesion analysis, which requires
+observing fine details like:
+- Color patterns and variations
+- Border irregularities
+- Surface texture
+- Vascular structures
+
+For medical image analysis, we use the full-resolution JPG images 
+(typically 600×450 to 1024×768 pixels) which are then resized to 224×224
+for ResNet50 input while preserving important diagnostic features.
+
+You can safely delete the hmnist CSV files to save disk space (saves ~130 MB).

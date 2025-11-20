@@ -1,0 +1,6 @@
+Metric,Value
+Test Accuracy (%),83.4510595358224
+Macro-Avg Precision,0.745913854540477
+Macro-Avg Recall,0.71328441120512
+Macro-Avg F1-Score,0.709483497786642
+Mean AUC,0.968893238476345

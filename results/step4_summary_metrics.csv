@@ -1,0 +1,13 @@
+Metric,Value
+Overall Accuracy,0.834510595358224
+Macro-Average Precision,0.745913854540477
+Macro-Average Recall,0.71328441120512
+Macro-Average F1-Score,0.709483497786642
+Weighted-Average Precision,0.859839238663437
+Weighted-Average Recall,0.834510595358224
+Weighted-Average F1-Score,0.839853296759907
+Mean AUC,0.968893238476345
+Total Samples,991
+Correct Predictions,827
+Incorrect Predictions,164
+Prediction Time (s),5.2026699

@@ -1,0 +1,9 @@
+Parameter,Value
+Architecture,"ResNet50 (Transfer Learning)"
+Input Size,"224x224x3"
+Optimizer,"Adam"
+Learning Rate,"1e-04"
+Batch Size,"16"
+Max Epochs,"30"
+Training Time (min),"10.49"
+Data Augmentation,"Rotation, Flip, Scale, Shear"

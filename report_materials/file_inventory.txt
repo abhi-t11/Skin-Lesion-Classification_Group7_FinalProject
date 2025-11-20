@@ -1,0 +1,22 @@
+Tables (CSV format)
+  table1_dataset_statistics.csv
+  table2_model_configuration.csv
+  table3_per_class_performance.csv
+  table4_overall_performance.csv
+  table5_literature_comparison.csv
+
+Figures (PNG format)
+  figure1_class_distribution.png
+  figure2_sample_images.png
+  figure3_data_augmentation.png
+  figure4_validation_confusion.png
+  figure5_test_confusion_matrix.png
+  figure6_performance_comparison.png
+  figure7_roc_curves.png
+  figure8_correct_predictions.png
+  figure9_error_analysis.png
+
+Summary Documents
+  results_summary.txt
+  quick_reference_card.png
+  complete_summary.mat

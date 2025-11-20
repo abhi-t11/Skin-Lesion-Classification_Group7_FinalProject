@@ -1,0 +1,31 @@
+# MATLAB
+*.asv
+*.m~
+
+# Large data files (download separately)
+data/HAM10000_images_part_1/
+data/HAM10000_images_part_2/
+data/all_images/
+data/organized_by_class/
+
+# IMPORTANT: Allow sample dataset to be committed
+!data/sample_dataset/
+
+# Exclude individual large images but allow sample images
+*.jpg
+!data/sample_dataset/**/*.jpg
+
+# Large model files
+results/*.mat
+!results/example_results.mat
+
+# Allow small CSVs
+!**/*.csv
+
+# Temporary files
+*.tmp
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
