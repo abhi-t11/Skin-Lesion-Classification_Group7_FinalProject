@@ -72,7 +72,7 @@ ver  % Check installed toolboxes
 The repository includes a sample dataset (70 images) for quick verification.
 ```matlab
 % Open MATLAB and navigate to code directory
-cd('path/to/Skin-Lesion-Classification/code')
+cd('path/to/Skin-Lesion-Classification_Group7_FinalProject/src')
 
 % Run quick demo with sample dataset
 run_sample_demo
@@ -80,7 +80,7 @@ run_sample_demo
 
 **Expected Output:**
 - ✅ Training completes in ~2-3 minutes
-- ✅ Accuracy: ~60-70% (lower due to limited data - this is normal)
+- ✅ Accuracy: ~50-60% (lower due to limited data - this is normal)
 - ✅ Demonstrates that code works correctly
 - ✅ Shows sample predictions and confusion matrix
 
@@ -135,7 +135,7 @@ run_sample_demo
 
 ### Option 1: Quick Demo (2-3 minutes) ⚡
 ```matlab
-cd('code')
+cd('src')
 run_sample_demo  % Uses included sample dataset (70 images)
 ```
 
@@ -145,7 +145,7 @@ run_sample_demo  % Uses included sample dataset (70 images)
 
 **Run each step sequentially:**
 ```matlab
-cd('code')
+cd('src')
 
 % Step 1: Organize dataset by class (~10 minutes)
 step1_organize_data
@@ -179,8 +179,8 @@ step5_generate_report_materials
 
 ## 📁 Project Structure
 ```
-Skin-Lesion-Classification/
-├── code/                           # Source code (MATLAB scripts)
+Skin-Lesion-Classification_Group7_FinalProject/
+├── src/                           # Source code (MATLAB scripts)
 │   ├── run_sample_demo.m           # Quick demo with sample data
 │   ├── step1_organize_data.m       # Data organization
 │   ├── step2_preprocess_data.m     # Preprocessing and splitting
@@ -220,8 +220,7 @@ Skin-Lesion-Classification/
 │   └── figure*.png                 # High-res figures
 │
 ├── README.md                       # This file
-├── data_readme.txt                 # Dataset setup instructions
-└── LICENSE                         # MIT License
+└──  data_readme.txt                 # Dataset setup instructions
 ```
 
 ---
@@ -408,7 +407,7 @@ Applied to **training set only** to prevent data leakage:
 
 ### Analysis
 
-Our results (83.31% validation accuracy) are competitive with baseline approaches and demonstrate:
+Our results (83.45% validation accuracy) are competitive with baseline approaches and demonstrate:
 - ✅ Effectiveness of transfer learning for medical imaging
 - ✅ Feasibility with limited computational resources (10 minutes vs hours)
 - ✅ Strong performance without ensemble methods
@@ -438,58 +437,6 @@ Our results (83.31% validation accuracy) are competitive with baseline approache
 
 ---
 
-## 🔮 Future Work
-
-### Short-term Improvements
-1. **Ensemble Methods**
-   - Combine ResNet50, DenseNet, EfficientNet
-   - Voting or stacking strategies
-   - Expected: +3-5% accuracy improvement
-
-2. **Advanced Augmentation**
-   - Mixup and Cutmix
-   - AutoAugment or RandAugment
-   - Test-time augmentation
-
-3. **Hyperparameter Optimization**
-   - Learning rate scheduling
-   - Batch size tuning
-   - Optimizer comparison (Adam vs SGD)
-
-### Medium-term Enhancements
-4. **Attention Mechanisms**
-   - Spatial attention to focus on lesion regions
-   - Channel attention for feature selection
-   - Grad-CAM visualization for interpretability
-
-5. **Segmentation Integration**
-   - Implement U-Net for lesion boundary detection
-   - Two-stage pipeline: segment then classify
-   - Multi-task learning (joint segmentation + classification)
-
-6. **Multi-modal Learning**
-   - Incorporate patient metadata (age, sex, location)
-   - Fusion of image and tabular data
-   - Expected: Better generalization
-
-### Long-term Goals
-7. **Clinical Deployment**
-   - Web interface for dermatologists
-   - Mobile app for primary care
-   - Integration with Electronic Health Records (EHR)
-
-8. **External Validation**
-   - Test on ISIC, BCN20000, PAD-UFES-20 datasets
-   - Multi-center clinical trials
-   - Real-world performance evaluation
-
-9. **Regulatory Approval**
-   - FDA 510(k) clearance pathway
-   - CE marking for European deployment
-   - Clinical evidence generation
-
----
-
 ## 📚 References
 
 ### Dataset
@@ -509,16 +456,6 @@ Our results (83.31% validation accuracy) are competitive with baseline approache
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
-
-**Academic Use:** Free for research and educational purposes  
-**Commercial Use:** Requires proper licensing and regulatory approval  
-**Citation Required:** Please cite this repository if used in academic work
-
----
-
 ## 🙏 Acknowledgments
 
 ### Dataset & Resources
@@ -529,7 +466,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ### Institution
 - **Virginia Commonwealth University**
 - **Department of Computer Science**
-- **CMSC 508 - Image Analysis Course**
+- **CMSC 630 - Image Analysis Course**
 
 ### Special Thanks
 - **Dr. Wei-Bang Chen** - Course instructor and project advisor
@@ -538,18 +475,9 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 ---
 
-## 👤 Contact
-
-**Project Maintainer:** Abhishek Tripathi  
-**Email:** [your.email@vcu.edu](mailto:your.email@vcu.edu)  
-**GitHub:** [@abhi-t11](https://github.com/abhi-t11)  
-**Institution:** Virginia Commonwealth University
-
 ### Getting Help
-- 📧 Email for questions or collaboration
-- 🐛 [Open an issue](https://github.com/abhi-t11/Skin-Lesion-Classification/issues) for bugs
-- 💡 [Start a discussion](https://github.com/abhi-t11/Skin-Lesion-Classification/discussions) for ideas
-- ⭐ Star this repo if you find it useful!
+- 🐛 [Open an issue](https://github.com/abhi-t11/Skin-Lesion-Classification_Group7_FinalProject/issues) for bugs
+- 💡 [Start a discussion](https://github.com/abhi-t11/Skin-Lesion-Classification_Group7_FinalProject/discussions) for ideas
 
 ---
 
@@ -606,7 +534,7 @@ If you encounter issues:
 2. 📖 **Check documentation:** Review `data_readme.txt` for dataset setup
 3. 🔍 **Verify installation:** Run `check_setup.m` to check all requirements
 4. 📊 **Review logs:** Check `results/` folder for error messages
-5. 🐛 **Open an issue:** [GitHub Issues](https://github.com/abhi-t11/Skin-Lesion-Classification/issues) with:
+5. 🐛 **Open an issue:** [GitHub Issues](https://github.com/abhi-t11/Skin-Lesion-Classification_Group7_FinalProject/issues) with:
    - MATLAB version
    - Error message (full text)
    - Steps to reproduce
@@ -625,17 +553,7 @@ If you encounter issues:
 | ✅ Report Materials | Complete | Step 5 working, all tables/figures |
 | ✅ Sample Dataset | Complete | Included for quick testing |
 | ✅ Documentation | Complete | README, data_readme, comments |
-| 📝 Final Report | In Progress | Due November 2025 |
-| 🎥 Presentation Video | Pending | Scheduled for November 2025 |
+| ✅ Final Report | Complete | Updated on Canvas |
+| ✅ Presentation Video | Complete | Updated on Canvas |
 
 **Last Updated:** November 20, 2025
-
----
-
-## 🌟 Star History
-
-If you find this project useful, please consider giving it a star! ⭐
-
-[![Star History Chart](https://api.star-history.com/svg?repos=abhi-t11/Skin-Lesion-Classification&type=Date)](https://star-history.com/#abhi-t11/Skin-Lesion-Classification&Date)
-
----

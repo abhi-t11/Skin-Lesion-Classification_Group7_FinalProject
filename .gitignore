@@ -16,7 +16,6 @@ data/organized_by_class/
 !data/sample_dataset/**/*.jpg
 
 # Large model files
-results/*.mat
 !results/example_results.mat
 
 # Allow small CSVs
